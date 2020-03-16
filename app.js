@@ -5,7 +5,7 @@ const video = document.getElementById("video");
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri("/models"), //yüz tanıma
   faceapi.nets.faceLandmark68Net.loadFromUri("/models"), //yüz işaretleme
-  faceapi.nets.faceRecognitionNet.loadFromUri("/models"), //tüz tanıma
+  faceapi.nets.faceRecognitionNet.loadFromUri("/models"), //yüz tanıma
   faceapi.nets.faceExpressionNet.loadFromUri("/models") //duygularımı anlama
 ]).then(kamerayiAc());//yüklendiğinde kamerayı aç
 
